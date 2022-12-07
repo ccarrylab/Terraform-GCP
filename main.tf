@@ -18,9 +18,9 @@ module "dataproc" {
   cluster_name = "poccluster"
   network_name = "${var.network_name}"
   bucket_name = "dataproc-poc-bucket"
-  master_num_instances = 3
+  master_num_instances = "3"
   master_machine_type = "n1-standard-2"
-  worker_num_instances = 2
+  worker_num_instances = "2"
   worker_machine_type = "n1-standard-2"
 }
 
